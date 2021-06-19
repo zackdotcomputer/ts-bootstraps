@@ -1,2 +1,5 @@
 .prettierrc.json
 /*.js
+**/node_modules/*
+**/out/*
+**/.next/*
