@@ -7,8 +7,20 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:prettier/recommended",
+    "plugin:react/recommended",
     "prettier"
   ],
+  env: {
+    es6: true,
+    browser: true,
+    jest: true,
+    node: true
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   plugins: ["prettier"],
   rules: {
     "import/extensions": ["off"],
@@ -24,6 +36,12 @@ module.exports = {
       "error",
       {
         components: ["Link", "LinkTo"]
+      }
+    ],
+    "no-console": [
+      2,
+      {
+        allow: ["warn", "error"]
       }
     ]
   }
